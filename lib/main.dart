@@ -11,9 +11,12 @@ class MainApp extends StatelessWidget{
       home:Scaffold(
         body:Center(
           child:Container(
-            color:Colors.blue,
             height: 200,
             width: 250,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: Colors.blue
+            ),
             alignment: Alignment.center,
             child: Text('hello World!'),
           ),
