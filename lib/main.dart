@@ -14,11 +14,18 @@ class MainApp extends StatelessWidget{
             height: 200,
             width: 250,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(60),
               color: Colors.blue
             ),
             alignment: Alignment.center,
-            child: Text('hello World!'),
+            child:Container(
+              decoration: BoxDecoration(
+                color: Colors.redAccent,
+                borderRadius: BorderRadius.circular(10)
+              ),
+              padding: EdgeInsets.all(10),
+              child: Text('Hellow'),
+            )
           ),
         ),
       ),
