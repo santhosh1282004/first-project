@@ -17,14 +17,33 @@ class MainApp extends StatelessWidget{
               borderRadius: BorderRadius.circular(60),
               color: Colors.blue
             ),
-            alignment: Alignment.center,
-            child:Container(
-              decoration: BoxDecoration(
-                color: Colors.redAccent,
-                borderRadius: BorderRadius.circular(10)
-              ),
-              padding: EdgeInsets.all(10),
-              child: Text('Hellow'),
+            child:Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(209, 146, 244, 54),
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  padding: EdgeInsets.all(20),
+                  child: Text('hellow'),
+                ),Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(209, 56, 243, 165),
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  padding: EdgeInsets.all(20),
+                  child: Text('hellow'),
+                ),Container(
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(209, 54, 216, 244),
+                    borderRadius: BorderRadius.circular(20)
+                  ),
+                  padding: EdgeInsets.all(20),
+                  child: Text('hellow'),
+                )
+              ],
             )
           ),
         ),
