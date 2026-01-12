@@ -9,44 +9,42 @@ class MainApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       home:Scaffold(
-        body:Center(
-          child:Container(
-            height: 200,
-            width: 250,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(60),
-              color: Colors.blue
-            ),
-            child:Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(209, 146, 244, 54),
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                  padding: EdgeInsets.all(20),
-                  child: Text('hellow'),
-                ),Container(
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(209, 56, 243, 165),
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                  padding: EdgeInsets.all(20),
-                  child: Text('hellow'),
-                ),Container(
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(209, 54, 216, 244),
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                  padding: EdgeInsets.all(20),
-                  child: Text('hellow'),
-                )
-              ],
-            )
-          ),
+        appBar: AppBar(
+          title: Text("Resturant Menu"),
+          backgroundColor: Color.fromARGB(137, 34, 247, 5),
+          centerTitle: false,
         ),
+        body: Container(
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 247, 247, 252),
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [
+              BoxShadow(
+                spreadRadius: 2,
+                blurRadius: 3,
+                offset:Offset(0, 5),
+                color: Color.fromARGB(177, 82, 105, 85)
+              )
+            ]
+          ),
+          width: double.infinity,
+          height: 90,
+          margin: EdgeInsets.all(10),
+          padding: EdgeInsets.all(10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "chicken Noodles",
+                style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+              ),
+              Text("Delicious chicken noodles with spices"),
+              Text(
+                "350 rs",
+                style: TextStyle(fontWeight: FontWeight.bold),)
+            ],
+          ),
+        )
       ),
     );
   }
