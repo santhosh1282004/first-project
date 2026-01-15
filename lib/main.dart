@@ -30,7 +30,7 @@ class MainApp extends StatelessWidget{
                 ]
               ),
               width: double.infinity,
-              height: 90,
+              height: 120 ,
               margin: EdgeInsets.all(10),
               padding: EdgeInsets.all(10),
               child: Column(
@@ -43,7 +43,14 @@ class MainApp extends StatelessWidget{
                   Text("Delicious chicken noodles with spices"),
                   Text(
                     "350 rs",
-                    style: TextStyle(fontWeight: FontWeight.bold),)
+                    style: TextStyle(fontWeight: FontWeight.bold),),
+                  MaterialButton(
+                    color: Color.fromARGB(171, 226, 109, 0),
+                    onPressed: (){
+                      print('');
+                    },
+                    child: Text('ourder'),
+                  ),
                 ],
               ),
             ),
